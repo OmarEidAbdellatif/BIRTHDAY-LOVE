@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>HBD WISH</title>	    
+    <title>HBD WISH</title>
     <link type="text/css" rel="stylesheet" href="file/default.css">
     <script type="text/javascript" src="file/jquery.min.js"></script>
     <script type="text/javascript" src="file/jscex.min.js"></script>
@@ -18,20 +19,24 @@
 
         #password-gate {
             position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             z-index: 99999;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, #1a0010 0%, #3d0020 40%, #6b0030 100%);
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 40%, #f48fb1 100%);
             overflow: hidden;
         }
 
         #password-gate .hearts-bg {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
             overflow: hidden;
         }
@@ -41,60 +46,91 @@
             bottom: -50px;
             font-size: 1.5rem;
             animation: floatHeart linear infinite;
-            opacity: 0.15;
+            opacity: 0.25;
         }
 
         @keyframes floatHeart {
-            0%   { transform: translateY(0) rotate(0deg); opacity: 0.15; }
-            100% { transform: translateY(-110vh) rotate(20deg); opacity: 0; }
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.15;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(20deg);
+                opacity: 0;
+            }
         }
 
         #password-gate .card {
             position: relative;
-            background: rgba(255, 255, 255, 0.07);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 100, 130, 0.3);
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
             border-radius: 24px;
             padding: 48px 40px;
             width: 340px;
             max-width: 92vw;
             text-align: center;
-            box-shadow: 0 8px 60px rgba(180, 0, 60, 0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+            box-shadow: 0 8px 40px rgba(233, 30, 99, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8);
             animation: cardPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
         }
 
         @keyframes cardPop {
-            from { opacity: 0; transform: scale(0.8) translateY(30px); }
-            to   { opacity: 1; transform: scale(1) translateY(0); }
+            from {
+                opacity: 0;
+                transform: scale(0.8) translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
         }
 
         #password-gate .big-heart {
             font-size: 3.5rem;
             display: block;
             margin-bottom: 12px;
+            color: #e91e63;
             animation: heartbeat 1.4s ease-in-out infinite;
         }
 
         @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            14%       { transform: scale(1.2); }
-            28%       { transform: scale(1); }
-            42%       { transform: scale(1.1); }
-            56%       { transform: scale(1); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            14% {
+                transform: scale(1.2);
+            }
+
+            28% {
+                transform: scale(1);
+            }
+
+            42% {
+                transform: scale(1.1);
+            }
+
+            56% {
+                transform: scale(1);
+            }
         }
 
         #password-gate h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 2rem;
-            color: #ffb3c6;
+            color: #c2185b;
             margin: 0 0 6px;
-            text-shadow: 0 0 20px rgba(255, 100, 130, 0.5);
+            text-shadow: 0 0 15px rgba(194, 24, 91, 0.2);
         }
 
         #password-gate p {
             font-family: 'Tajawal', sans-serif;
-            color: rgba(255, 200, 210, 0.75);
+            color: #ad1457;
             font-size: 0.9rem;
             margin: 0 0 28px;
         }
@@ -104,9 +140,9 @@
             box-sizing: border-box;
             padding: 14px 18px;
             border-radius: 12px;
-            border: 1.5px solid rgba(255, 100, 130, 0.35);
-            background: rgba(255, 255, 255, 0.08);
-            color: #fff;
+            border: 1.5px solid rgba(236, 64, 122, 0.3);
+            background: rgba(255, 255, 255, 0.65);
+            color: #880e4f;
             font-size: 1.1rem;
             font-family: 'Tajawal', sans-serif;
             text-align: center;
@@ -117,12 +153,12 @@
         }
 
         #password-gate input[type="password"]:focus {
-            border-color: rgba(255, 100, 130, 0.8);
-            box-shadow: 0 0 20px rgba(255, 50, 100, 0.3);
+            border-color: rgba(236, 64, 122, 0.7);
+            box-shadow: 0 0 16px rgba(236, 64, 122, 0.2);
         }
 
         #password-gate input[type="password"]::placeholder {
-            color: rgba(255, 180, 200, 0.4);
+            color: rgba(194, 24, 91, 0.35);
             letter-spacing: 1px;
             font-size: 0.9rem;
         }
@@ -132,20 +168,20 @@
             padding: 14px;
             border-radius: 12px;
             border: none;
-            background: linear-gradient(135deg, #e8003d, #ff6b8a);
+            background: linear-gradient(135deg, #ec407a, #f48fb1);
             color: #fff;
             font-size: 1rem;
             font-family: 'Tajawal', sans-serif;
             font-weight: 700;
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 20px rgba(232, 0, 61, 0.4);
+            box-shadow: 0 4px 20px rgba(236, 64, 122, 0.3);
             letter-spacing: 1px;
         }
 
         #password-gate button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(232, 0, 61, 0.5);
+            box-shadow: 0 8px 28px rgba(236, 64, 122, 0.4);
         }
 
         #password-gate button:active {
@@ -154,7 +190,7 @@
 
         #password-gate .error-msg {
             margin-top: 14px;
-            color: #ff6b8a;
+            color: #c2185b;
             font-family: 'Tajawal', sans-serif;
             font-size: 0.9rem;
             display: none;
@@ -162,9 +198,19 @@
         }
 
         @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25%       { transform: translateX(-8px); }
-            75%       { transform: translateX(8px); }
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-8px);
+            }
+
+            75% {
+                transform: translateX(8px);
+            }
         }
 
         #password-gate.fade-out {
@@ -172,7 +218,11 @@
         }
 
         @keyframes gateOut {
-            to { opacity: 0; transform: scale(1.05); pointer-events: none; }
+            to {
+                opacity: 0;
+                transform: scale(1.05);
+                pointer-events: none;
+            }
         }
     </style>
     <script>
@@ -187,13 +237,13 @@
             if (input === 'mory36') {
                 var gate = document.getElementById('password-gate');
                 gate.classList.add('fade-out');
-                setTimeout(function() {
+                setTimeout(function () {
                     gate.style.display = 'none';
                 }, 800);
             } else {
                 errMsg.style.display = 'block';
                 errMsg.style.animation = 'none';
-                setTimeout(function() { errMsg.style.animation = 'shake 0.4s ease'; }, 10);
+                setTimeout(function () { errMsg.style.animation = 'shake 0.4s ease'; }, 10);
                 document.getElementById('pw-input').value = '';
                 document.getElementById('pw-input').focus();
             }
@@ -203,14 +253,14 @@
             if (e.key === 'Enter') checkPassword();
         }
 
-        window.onload = function() {
+        window.onload = function () {
             generateHearts();
             document.getElementById('pw-input').focus();
         };
 
         function generateHearts() {
             var bg = document.getElementById('hearts-bg');
-            var emojis = ['❤️','🌹','💕','💖','🌸','💝','✨'];
+            var emojis = ['♥', '❤', '♥', '❤', '♥', '❤', '♥'];
             for (var i = 0; i < 18; i++) {
                 var span = document.createElement('span');
                 span.innerText = emojis[Math.floor(Math.random() * emojis.length)];
@@ -223,22 +273,25 @@
         }
     </script>
 </head>
+
 <body>
     <!-- Password Gate -->
     <div id="password-gate">
         <div class="hearts-bg" id="hearts-bg"></div>
         <div class="card">
-            <span class="big-heart">❤️</span>
+            <span class="big-heart">&#10084;</span>
             <h1>For My Love</h1>
-            <p>اكتب الباسورد عشان تدخل 🌹</p>
+            <p>اكتب الباسورد عشان تدخل</p>
             <input type="password" id="pw-input" placeholder="• • • • • •" onkeydown="pwKeyDown(event)" />
-            <button onclick="checkPassword()">دخول ❤️</button>
-            <div class="error-msg" id="pw-error">❌ الباسورد غلط، حاول تاني!</div>
+            <button onclick="checkPassword()">دخول</button>
+            <div class="error-msg" id="pw-error">الباسورد غلط، حاول تاني</div>
         </div>
     </div>
 
     <div id="main">
-        <div id="error"><a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a href="http://firefox.com.cn/download/">Firefox</a>)</div>
+        <div id="error"><a
+                href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a
+                href="http://firefox.com.cn/download/">Firefox</a>)</div>
         <audio autoplay="autoplay" height="100" width="100" id="myAudio">
             <source src="aud.mp3" type="audio/mp3" />
             <embed height="100" width="100" src="aud.mp3" />
@@ -246,14 +299,14 @@
         <div id="wrap">
             <div id="text">
                 <div id="code" dir="rtl" lang="ar">
-                  <span class="say">يا توتي يا أجمل واحدة في حياتي</span><br>
-                  <span class="say">كل سنة وإنتِ حبيبتي وأجمل حاجة في أيامي</span><br>
-                  <span class="say">ضحكتك لوحدها بتخلّي الدنيا أحلى</span><br>
-                  <span class="say">أنا محظوظ إنك في حياتي يا توتي</span><br>
-                  <span class="say">بعشقك أكتر من أي كلام ممكن يوصف</span><br>
-                  <span class="say"> إن شاء الله السنة دي تكوني معايا يا حبيبتي و خطيبتي </span><br>
-                  <span class="say">إنتِ دايمًا في قلبي، وكل قلبي ليكي يا توتي</span><br>
-                  <span class="say">- من حبيبك اللي بيعشقك موري ❤️</span><br>
+                    <span class="say">يا توتي يا أجمل واحدة في حياتي</span><br>
+                    <span class="say">كل سنة وإنتِ حبيبتي وأجمل حاجة في أيامي</span><br>
+                    <span class="say">ضحكتك لوحدها بتخلّي الدنيا أحلى</span><br>
+                    <span class="say">أنا محظوظ إنك في حياتي يا توتي</span><br>
+                    <span class="say">بعشقك أكتر من أي كلام ممكن يوصف</span><br>
+                    <span class="say"> إن شاء الله السنة دي تكوني معايا يا حبيبتي و خطيبتي </span><br>
+                    <span class="say">إنتِ دايمًا في قلبي، وكل قلبي ليكي يا توتي</span><br>
+                    <span class="say">- من حبيبك اللي بيعشقك موري ❤️</span><br>
                 </div>
             </div>
             <div id="clock-box">
@@ -264,137 +317,138 @@
     </div>
 
     <script>
-    (function() {
-        var canvas = $('#canvas');
-		
-        if (!canvas[0].getContext) {
-            $("#error").show();
-            return false;
-        }
+        (function () {
+            var canvas = $('#canvas');
 
-        var width = canvas.width();
-        var height = canvas.height();        
-        canvas.attr("width", width);
-        canvas.attr("height", height);
+            if (!canvas[0].getContext) {
+                $("#error").show();
+                return false;
+            }
 
-        var opts = {
-            seed: {
-                x: width / 2 - 20,
-                color: "rgb(190, 26, 37)",
-                scale: 2
-            },
-            branch: [
-                [535, 680, 570, 250, 500, 200, 30, 100, [
-                    [540, 500, 455, 417, 340, 400, 13, 100, [
-                        [450, 435, 434, 430, 394, 395, 2, 40]
-                    ]],
-                    [550, 445, 600, 356, 680, 345, 12, 100, [
-                        [578, 400, 648, 409, 661, 426, 3, 80]
-                    ]],
-                    [539, 281, 537, 248, 534, 217, 3, 40],
-                    [546, 397, 413, 247, 328, 244, 9, 80, [
-                        [427, 286, 383, 253, 371, 205, 2, 40],
-                        [498, 345, 435, 315, 395, 330, 4, 60]
-                    ]],
-                    [546, 357, 608, 252, 678, 221, 6, 100, [
-                        [590, 293, 646, 277, 648, 271, 2, 80]
+            var width = canvas.width();
+            var height = canvas.height();
+            canvas.attr("width", width);
+            canvas.attr("height", height);
+
+            var opts = {
+                seed: {
+                    x: width / 2 - 20,
+                    color: "rgb(190, 26, 37)",
+                    scale: 2
+                },
+                branch: [
+                    [535, 680, 570, 250, 500, 200, 30, 100, [
+                        [540, 500, 455, 417, 340, 400, 13, 100, [
+                            [450, 435, 434, 430, 394, 395, 2, 40]
+                        ]],
+                        [550, 445, 600, 356, 680, 345, 12, 100, [
+                            [578, 400, 648, 409, 661, 426, 3, 80]
+                        ]],
+                        [539, 281, 537, 248, 534, 217, 3, 40],
+                        [546, 397, 413, 247, 328, 244, 9, 80, [
+                            [427, 286, 383, 253, 371, 205, 2, 40],
+                            [498, 345, 435, 315, 395, 330, 4, 60]
+                        ]],
+                        [546, 357, 608, 252, 678, 221, 6, 100, [
+                            [590, 293, 646, 277, 648, 271, 2, 80]
+                        ]]
                     ]]
-                ]] 
-            ],
-            bloom: {
-                num: 700,
-                width: 1080,
-                height: 650,
-            },
-            footer: {
-                width: 1200,
-                height: 5,
-                speed: 10,
+                ],
+                bloom: {
+                    num: 700,
+                    width: 1080,
+                    height: 650,
+                },
+                footer: {
+                    width: 1200,
+                    height: 5,
+                    speed: 10,
+                }
             }
-        }
 
-        var tree = new Tree(canvas[0], width, height, opts);
-        var seed = tree.seed;
-        var foot = tree.footer;
-        var hold = 1;
+            var tree = new Tree(canvas[0], width, height, opts);
+            var seed = tree.seed;
+            var foot = tree.footer;
+            var hold = 1;
 
-        canvas.click(function(e) {
-            playAudio();
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            if (seed.hover(x, y)) {
-                hold = 0; 
-                canvas.unbind("click");
-                canvas.unbind("mousemove");
-                canvas.removeClass('hand');
-            }
-        }).mousemove(function(e) {
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            canvas.toggleClass('hand', seed.hover(x, y));
-        });
+            canvas.click(function (e) {
+                playAudio();
+                var offset = canvas.offset(), x, y;
+                x = e.pageX - offset.left;
+                y = e.pageY - offset.top;
+                if (seed.hover(x, y)) {
+                    hold = 0;
+                    canvas.unbind("click");
+                    canvas.unbind("mousemove");
+                    canvas.removeClass('hand');
+                }
+            }).mousemove(function (e) {
+                var offset = canvas.offset(), x, y;
+                x = e.pageX - offset.left;
+                y = e.pageY - offset.top;
+                canvas.toggleClass('hand', seed.hover(x, y));
+            });
 
-        var seedAnimate = eval(Jscex.compile("async", function () {
-            seed.draw();
-            while (hold) {
-                $await(Jscex.Async.sleep(10));
-            }
-            while (seed.canScale()) {
-                seed.scale(0.95);
-                $await(Jscex.Async.sleep(10));
-            }
-            while (seed.canMove()) {
-                seed.move(0, 2);
+            var seedAnimate = eval(Jscex.compile("async", function () {
+                seed.draw();
+                while (hold) {
+                    $await(Jscex.Async.sleep(10));
+                }
+                while (seed.canScale()) {
+                    seed.scale(0.95);
+                    $await(Jscex.Async.sleep(10));
+                }
+                while (seed.canMove()) {
+                    seed.move(0, 2);
+                    foot.draw();
+                    $await(Jscex.Async.sleep(10));
+                }
+            }));
+
+            var growAnimate = eval(Jscex.compile("async", function () {
+                do {
+                    tree.grow();
+                    $await(Jscex.Async.sleep(10));
+                } while (tree.canGrow());
+            }));
+
+            var flowAnimate = eval(Jscex.compile("async", function () {
+                do {
+                    tree.flower(2);
+                    $await(Jscex.Async.sleep(10));
+                } while (tree.canFlower());
+            }));
+
+            var moveAnimate = eval(Jscex.compile("async", function () {
+                tree.snapshot("p1", 240, 0, 610, 680);
+                while (tree.move("p1", 500, 0)) {
+                    foot.draw();
+                    $await(Jscex.Async.sleep(10));
+                }
                 foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
-        }));
+                tree.snapshot("p2", 500, 0, 610, 680);
 
-        var growAnimate = eval(Jscex.compile("async", function () {
-            do {
-                tree.grow();
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canGrow());
-        }));
+                canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+                canvas.css("background", "#ffe");
+                $await(Jscex.Async.sleep(300));
+                canvas.css("background", "none");
+            }));
 
-        var flowAnimate = eval(Jscex.compile("async", function () {
-            do {
-                tree.flower(2);
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canFlower());
-        }));
+            var textAnimate = eval(Jscex.compile("async", function () {
+                $("#code").show().typewriter();
+            }));
 
-        var moveAnimate = eval(Jscex.compile("async", function () {
-            tree.snapshot("p1", 240, 0, 610, 680);
-            while (tree.move("p1", 500, 0)) {
-                foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
-            foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+            var runAsync = eval(Jscex.compile("async", function () {
+                $await(seedAnimate());
+                $await(growAnimate());
+                $await(flowAnimate());
+                $await(moveAnimate());
+                textAnimate().start();
+            }));
 
-            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-            canvas.css("background", "#ffe");
-            $await(Jscex.Async.sleep(300));
-            canvas.css("background", "none");
-        }));
-
-        var textAnimate = eval(Jscex.compile("async", function () {
-            $("#code").show().typewriter();
-        }));
-	    
-        var runAsync = eval(Jscex.compile("async", function () {
-            $await(seedAnimate());
-            $await(growAnimate());
-            $await(flowAnimate());
-            $await(moveAnimate());
-            textAnimate().start();
-        }));
-
-        runAsync().start();
-    })();
+            runAsync().start();
+        })();
     </script>
 </body>
+
 </html>
