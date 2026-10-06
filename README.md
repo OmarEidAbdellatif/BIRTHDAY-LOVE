@@ -9,15 +9,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hiteshraj786/birthday-project/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/hiteshraj786/birthday-project?style=for-the-badge&color=ff69b4" alt="License"/>
+  <a href="https://github.com/OmarEidAbdellatif/BIRTHDAY-LOVE/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/OmarEidAbdellatif/BIRTHDAY-LOVE?style=for-the-badge&color=ff69b4" alt="License"/>
   </a>
   <img src="https://img.shields.io/badge/Made%20With-❤️%20%26%20JavaScript-ff1493?style=for-the-badge" alt="Made with Love"/>
   <img src="https://img.shields.io/badge/Canvas-Animation-blueviolet?style=for-the-badge" alt="Canvas Animation"/>
 </p>
 
 <p align="center">
-  <strong>🌟 <a href="https://birthday-project-a5jj.onrender.com">View Live Demo</a> 🌟</strong>
+  <strong>🌟 <a href="https://her-birthday-nine-ruby.vercel.app">View Live Demo</a> 🌟</strong>
 </p>
 
 ---
@@ -32,11 +32,12 @@ This is a **handcrafted, animated birthday wish** built as a single-page web exp
 
 ## 🎬 How It Works
 
-1. 🌱 **A seed appears** on a dark canvas — click it to begin the magic
-2. 🌳 **A cherry blossom tree grows** branch by branch with smooth canvas animations
-3. 🌸 **Flowers bloom** across the tree with beautiful pink and red petals
-4. ✍️ **Birthday messages appear** with a typewriter effect, one letter at a time
-5. 🎵 **Background music plays** to set the perfect mood
+1. 🔐 **A password gate appears** — enter the secret code to unlock the experience
+2. 🌱 **A seed appears** on a dark canvas — click it to begin the magic
+3. 🌳 **A cherry blossom tree grows** branch by branch with smooth canvas animations
+4. 🌸 **Flowers bloom** across the tree with beautiful pink and red petals
+5. ✍️ **Birthday messages appear** with a typewriter effect, one letter at a time
+6. 🎵 **Background music plays** to set the perfect mood
 
 ---
 
@@ -71,10 +72,10 @@ This is a **handcrafted, animated birthday wish** built as a single-page web exp
 
 ```bash
 # Clone the repository
-git clone https://github.com/hiteshraj786/birthday-project.git
+git clone https://github.com/OmarEidAbdellatif/BIRTHDAY-LOVE.git
 
 # Navigate to the project
-cd birthday-project/her-birthday
+cd BIRTHDAY-LOVE/her-birthday
 
 # Open in your browser
 start index.html        # Windows
@@ -89,7 +90,7 @@ xdg-open index.html     # Linux
 ## 📁 Project Structure
 
 ```
-birthday-project/
+BIRTHDAY-LOVE/
 ├── her-birthday/
 │   ├── index.html          # 🎯 Main entry point
 │   ├── aud.mp3             # 🎵 Background music
@@ -110,6 +111,7 @@ birthday-project/
 
 ## 🎨 Features at a Glance
 
+- 🔐 **Password Protection** — Only those with the secret code can enter
 - 🌸 **Animated Cherry Blossom Tree** — Grows organically on an HTML5 Canvas
 - ✍️ **Typewriter Text Effect** — Messages revealed character by character with a blinking cursor
 - 🎵 **Background Music** — Auto-plays a sweet audio track to set the mood
@@ -125,11 +127,12 @@ Want to make it your own? Here's how:
 
 | What to Change | Where |
 |---|---|
-| Birthday messages | `index.html` → Lines 33-40 (`<span class="say">`) |
+| Birthday messages | `index.html` → (`<span class="say">`) |
 | Background music | Replace `her-birthday/aud.mp3` with your audio file |
-| Tree colors/shape | `index.html` → `opts` object (lines 64-98) |
+| Tree colors/shape | `index.html` → `opts` object |
 | Text styling | `file/default.css` → `#code` selector |
-| Number of blooms | `index.html` → `opts.bloom.num` (line 89) |
+| Number of blooms | `index.html` → `opts.bloom.num` |
+| Password | `index.html` → `checkPassword()` function |
 
 ---
 
@@ -140,7 +143,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 <p align="center">
-  Made with lots of ❤️ by <a href="https://github.com/hiteshraj786">Hitesh</a>
+  Made with lots of ❤️ by <a href="https://github.com/OmarEidAbdellatif">Omar Eid</a>
 </p>
 
 <p align="center">
